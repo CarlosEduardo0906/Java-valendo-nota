@@ -9,6 +9,10 @@ class Main {
         System.out.println("A velocidade maxima do veiculo e " + t.getVelmax()+"\n");
         t.setPassageiros(4);
         System.out.println("A quantidade total de passageiros no taxi é " + t.getPassageiros()+"\n");
+        t.setValor(35);
+        System.out.println("O valor da corrida é de " + t.getValor()+"\n");
+        t.setRota("Shopping RioMar");
+        System.out.println("O destino dá viagem é " + t.getRota()+"\n");
         System.out.println("Agostinho Carrara aprova");
     }
 }
@@ -18,6 +22,8 @@ class Taxi{
    private int kmrodados;
    private int velMax;
    private int passageiros;
+   private int valor;
+   private String rota;
    
    public int getAssentos(){
        return this.assentos;
@@ -47,5 +53,16 @@ class Taxi{
    public void setPassageiros(int passageiros){
        this.passageiros = passageiros;
    }
-  
+   public int getValor(){
+       return this.valor;
+   }
+  public void setValor(int valor){
+      this.valor = valor;
+  }
+  public String getRota(){
+      return this.rota;
+  }
+  public void setRota(String rota){
+      this.rota = rota;
+  }
 }
