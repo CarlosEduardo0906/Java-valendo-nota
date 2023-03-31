@@ -1,0 +1,51 @@
+class Main {
+    public static void main(String[] args) {
+        Taxi t = new Taxi();
+        t.setAssentos(4);
+        System.out.println("A quantidade de assentos no taxi é " + t.getAssentos()+"\n");
+        t.setkmRodados(250);
+        System.out.println("Os kilometros rodados são " + t.getkmRodados()+"\n");
+        t.setVelmax(150);
+        System.out.println("A velocidade maxima do veiculo e " + t.getVelmax()+"\n");
+        t.setPassageiros(4);
+        System.out.println("A quantidade total de passageiros no taxi é " + t.getPassageiros()+"\n");
+        System.out.println("Agostinho Carrara aprova");
+    }
+}
+
+class Taxi{
+   private int assentos;
+   private int kmrodados;
+   private int velMax;
+   private int passageiros;
+   
+   public int getAssentos(){
+       return this.assentos;
+   }
+   
+   public void setAssentos(int assentos){
+       this.assentos = assentos;
+       
+   }
+   public int getkmRodados(){
+       return this.kmrodados;
+}
+   public void setkmRodados(int kmrodados){
+        this.kmrodados = kmrodados;
+    
+  }
+   public int getVelmax(){
+      return this.velMax;
+  }
+  
+   public void setVelmax(int velMax){
+       this.velMax = velMax;
+   }
+   public int getPassageiros(){
+       return this.passageiros;
+   }
+   public void setPassageiros(int passageiros){
+       this.passageiros = passageiros;
+   }
+  
+}
